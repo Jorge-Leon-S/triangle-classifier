@@ -5,7 +5,7 @@ def is_valid_triangle(a, b, c) -> bool:
         return False
     return (
         a + b > c
-        and a + b + c
+        and a + c > b
         and b + c > a
     )
 
@@ -22,7 +22,7 @@ def classify_triangle(a, b, c,) -> str:
     x, y, z, = sorted((a,b,c))
     if math.isclose(
         x*x+y*y,
-        x*z,
+        z*z,
         rel_tol=1e-9,
         abs_tol=1e-9,
     ):
