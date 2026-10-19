@@ -16,7 +16,7 @@ def classify_triangle(a, b, c,) -> str:
     if a == b == c:
         triangle_type = "Equilateral"
     elif a == b or a == c or b == c:
-        triangle_type = "Isoceles"
+        triangle_type = "Isosceles"
     else:
         triangle_type = "Scalene"
     x, y, z, = sorted((a,b,c))
